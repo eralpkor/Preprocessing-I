@@ -287,6 +287,9 @@ button:focus {
   padding: 2%;
   width: 10%;
 }
+footer i {
+  color: crimson;
+}
 @media screen and (max-width: 500px) {
   .top .side {
     justify-content: center;
