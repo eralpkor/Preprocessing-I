@@ -134,3 +134,46 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  max-width: 1000px;
+  height: 100vh;
+}
+a:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+a.active {
+  color: #e03232;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+#tiny {
+  border-radius: 50%;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  50% {
+    left: 60%;
+    opacity: 0.1;
+  }
+}
+#smiley:hover {
+  transform: scale(1.1);
+}

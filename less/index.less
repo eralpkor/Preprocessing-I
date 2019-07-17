@@ -56,4 +56,49 @@ table {
 html, body {
     height: 100%;
 }
+// Set font family to roboto in every font type
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+@width: 100%;
+
+.container {
+  max-width: 1000px;
+  height: 100vh;
+}
+a:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+a.active {
+  color: rgb(224, 50, 50);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  // width: @width;
+}
+#tiny {
+  border-radius: 50%;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  50% {
+    left: 60%;
+    opacity: 0.1;
+  }
+}
+
+#smiley:hover {
+  transform: scale(1.1);
+}
 
