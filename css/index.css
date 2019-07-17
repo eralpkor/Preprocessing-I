@@ -221,7 +221,7 @@ a {
 }
 .mid {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   height: 100px;
 }
 .mid h3 {
@@ -229,6 +229,10 @@ a {
 }
 .mid p {
   padding: 0 0 5%;
+  line-height: 1.5em;
+}
+.mid .side p h3 {
+  padding: 5% 0;
 }
 .button {
   background-color: white;

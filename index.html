@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/index.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Eralp Resume</title>
 </head>
 
@@ -16,8 +17,7 @@
   <div class="container">
     <!-- top navigation -->
     <nav class="navigation" id="Nav">
-      <a id="smiley" class="logo" href="#page-top"> <img id="tiny"
-          src="img/favicon-32x32.png" alt="cat image"></a>
+      <a id="smiley" class="logo" href="#page-top"> <img id="tiny" src="img/favicon-32x32.png" alt="cat image"></a>
 
       <a class="home active" href="./index.html">Home</a>
       <a href="./services.html">About</a>
@@ -37,31 +37,38 @@
         <h1>Eralp Kor</h1>
         <hr style="border-top: dotted 1px; width: 200px;">
         <h3>Full Stack Web Developer</h3>
-        
+
         <button onclick="location.href='./contact.html'" type="button" class="button">Contact Me</button>
       </div>
     </div>
 
     <section class="mid">
-      <h3>Summary</h3>
-      <p>Test Engineer, with over 14 years of IT experience. Manual and automated testing. All aspects of Server upgrade, assembly, testing and troubleshooting.  Excellent reputation for completing projects in a timely manner and in accordance with project specifications. Currently studying Full Stack Web Development and Computer Science  at Lambda School.</p>
+      <div class="side">
+        <h3>Summary</h3>
+        <p>Test Engineer, with over 14 years of IT experience. Manual and automated testing. All aspects of Server
+          upgrade, assembly, testing and troubleshooting. Excellent reputation for completing projects in a timely
+          manner and in accordance with project specifications. Currently studying Full Stack Web Development and
+          Computer Science at Lambda School.</p>
+      </div>
+      <div class="side">
+        <h1>helo</h1>
+      </div>
+
     </section>
 
   </div>
 
 
-<script>
-
-function expandNav() {
-  var nav = document.getElementById('Nav');
-  if (nav.className === 'navigation') {
-    nav.className += ' responsive';
-  } else {
-    nav.className = 'navigation';
-  }
-}
-
-</script>
+  <script>
+    function expandNav() {
+      var nav = document.getElementById('Nav');
+      if (nav.className === 'navigation') {
+        nav.className += ' responsive';
+      } else {
+        nav.className = 'navigation';
+      }
+    }
+  </script>
 </body>
 
 </html>
