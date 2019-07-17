@@ -4,73 +4,192 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
+
+// set background color
+body {
+  background: #C9D6FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 // Set font family to roboto in every font type
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+// Variables;
+@width: 100%;
+
+.nav() {
+  padding: 5%;
+}
+
+@h1: 3.5em;
+@h3: 1.5em;
 body {
   font-family: 'Roboto', sans-serif;
 }
-@width: 100%;
+
+h1 {
+  font-size: @h1;
+}
+h3 {
+  font-size: @h3;
+}
 
 .container {
   max-width: 1000px;
-  height: 100vh;
+  width: 93%;
+  // height: 100vh;
+  margin: 0 auto;
 }
+
 a:hover {
   color: crimson;
   transition: 0.5s;
 }
+
 a.active {
   color: rgb(224, 50, 50);
 }
@@ -83,8 +202,10 @@ a {
 .navigation {
   display: flex;
   justify-content: space-around;
-  // width: @width;
+  align-items: center;
+  .nav();
 }
+
 #tiny {
   border-radius: 50%;
   animation-name: fade;
@@ -102,3 +223,73 @@ a {
   transform: scale(1.1);
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    padding-bottom: 2%;
+  }
+  hr {
+    margin-bottom: 5%;
+  }
+}
+
+.top .side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 75px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  h3 {
+    padding: 0 0 3%;
+  }
+  p {
+    padding: 0 0 5%;
+  }
+}
+
+// Button properties
+.button {
+  background-color: white; 
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  border-radius: 7px;
+  border: 2px solid #008CBA;
+  margin: 7% 0 0 0;
+  align-self: center;
+}
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 35%;
+}
+
+.button:hover {
+  background-color: #008CBA;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  outline:0;
+}
