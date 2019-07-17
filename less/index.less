@@ -269,8 +269,7 @@ a {
 
 .mid {
   .midSection();
-  // height: 250px;
-  overflow: auto
+ 
 
   // margin: 5%;
   h3 {
@@ -288,7 +287,7 @@ a {
 
   .side .skill-set ul {
     width: 250px;
-    height: 250px;
+    // height: 250px;
     .skills();
   }
 
@@ -331,6 +330,30 @@ button:focus {
   outline: 0;
 }
 
+.bottom{
+  width: 100%;
+  text-align: center;
+  h1{
+    padding: 5% 0 3% 0;
+  }
+}
+.bottom table{
+  width: auto;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border-top: 1px solid black;
+  tr{
+    border-bottom: 1px dashed black;
+  }
+  td{
+    padding: 2%;
+    width: 10%;
+  }
+}
+
+
+
+
 @media screen and (max-width: 500px) {
   .top {
     .side {
@@ -358,7 +381,21 @@ button:focus {
         justify-content: center;
         width: 100%;
         text-align: center;
-        margin: 10%;
+        .skill-set ul li i{
+          font-size: 2rem;
+          
+        }
+        .skill-set ul{
+          width: 100%;
+          justify-content: space-around;
+          li{
+            margin: 0 5px 0 0;
+          }
+        }
+        h3{
+          font-weight: 700;
+          margin-bottom: 5%;
+        }
       }
     }
   }

@@ -236,7 +236,6 @@ a {
 }
 .mid .side .skill-set ul {
   width: 250px;
-  height: 250px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -268,6 +267,26 @@ a {
 button:focus {
   outline: 0;
 }
+.bottom {
+  width: 100%;
+  text-align: center;
+}
+.bottom h1 {
+  padding: 5% 0 3% 0;
+}
+.bottom table {
+  width: auto;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border-top: 1px solid black;
+}
+.bottom table tr {
+  border-bottom: 1px dashed black;
+}
+.bottom table td {
+  padding: 2%;
+  width: 10%;
+}
 @media screen and (max-width: 500px) {
   .top .side {
     justify-content: center;
@@ -292,7 +311,20 @@ button:focus {
     justify-content: center;
     width: 100%;
     text-align: center;
-    margin: 10%;
+  }
+  .mid .side .skill-set ul li i {
+    font-size: 2rem;
+  }
+  .mid .side .skill-set ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .mid .side .skill-set ul li {
+    margin: 0 5px 0 0;
+  }
+  .mid .side h3 {
+    font-weight: 700;
+    margin-bottom: 5%;
   }
 }
 @media screen and (max-width: 500px) {
