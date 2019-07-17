@@ -222,7 +222,7 @@ a {
 .mid {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 250px;
 }
 .mid h3 {
   padding: 0 0 3%;
@@ -233,6 +233,10 @@ a {
 }
 .mid .side p h3 {
   padding: 5% 0;
+}
+.mid .side ul li {
+  font-size: 20px;
+  line-height: 1.5em;
 }
 .button {
   background-color: white;
