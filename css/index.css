@@ -201,6 +201,7 @@ a {
 }
 .side {
   width: 48%;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,7 +223,6 @@ a {
 .mid {
   display: flex;
   justify-content: space-between;
-  height: 250px;
 }
 .mid h3 {
   padding: 0 0 3%;
@@ -234,9 +234,12 @@ a {
 .mid .side p h3 {
   padding: 5% 0;
 }
-.mid .side ul li {
-  font-size: 20px;
-  line-height: 1.5em;
+.mid .side .skill-set ul {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .button {
   background-color: white;
@@ -264,4 +267,50 @@ a {
 }
 button:focus {
   outline: 0;
+}
+@media screen and (max-width: 500px) {
+  .top .side {
+    justify-content: center;
+    width: 100%;
+  }
+  .top .hide {
+    display: none;
+  }
+  .top .button {
+    width: 100px;
+    font-size: 0.7em;
+    height: 25px;
+    padding: 0;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mid {
+    flex-direction: column;
+  }
+  .mid .side {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navigation a:not(:first-child) {
+    display: none;
+  }
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+  .navigation .noShow img {
+    float: left;
+    width: 100px;
+  }
+  .navigation {
+    overflow: hidden;
+  }
+  .navigation.responsive a:first-child {
+    display: none;
+  }
 }
