@@ -243,6 +243,26 @@ a {
 .top {
   .midSection();
   margin: 5% 0;
+
+  @media screen and (max-width: 500px) {
+
+    .side {
+      justify-content: center;
+      width: 100%;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .button {
+      width: 100px;
+      font-size: 0.7em;
+      height: 25px;
+      padding: 0;
+      border-radius: 5px;
+    }
+  }
 }
 
 .side {
@@ -272,6 +292,7 @@ a {
 
 .mid {
   .midSection();
+
   h3 {
     padding: 0 0 3%;
   }
@@ -293,10 +314,6 @@ a {
 
 }
 
-// ul {
-//   .skills();
-//   // display: flex;
-// }
 
 // Button properties
 .button {
@@ -330,99 +347,101 @@ button:focus {
   outline: 0;
 }
 
-.bottom{
+.bottom {
   width: 100%;
   text-align: center;
-  h1{
+
+  h1 {
     padding: 5% 0 3% 0;
   }
+
+  @media screen and (max-width: 500px){
+    table tr td{
+      font-size: 0.8rem;
+    }
+  }
 }
-.bottom table{
+
+.bottom table {
   width: auto;
   margin: 0 auto;
   font-size: 1.2rem;
   border-top: 1px solid black;
-  tr{
+
+  tr {
     border-bottom: 1px dashed black;
   }
-  td{
+
+  td {
     padding: 2%;
     width: 10%;
   }
 }
 
-footer i{
+.bottom thead {
+  background-color: #008CBA;
+  color: #C9D6FF;
+}
+
+footer i {
   color: crimson;
 }
 
 
+
+
 @media screen and (max-width: 500px) {
-  .top {
+  .mid {
+    flex-direction: column;
+
     .side {
       justify-content: center;
       width: 100%;
-    }
+      text-align: center;
 
-    .hide {
-      display: none;
-    }
+      .skill-set ul li i {
+        font-size: 2rem;
 
-    .button {
-      width: 100px;
-      font-size: 0.7em;
-      height: 25px;
-      padding: 0;
-      border-radius: 5px;
-    }
-  }
-}
-  @media screen and (max-width: 500px) {
-    .mid {
-      flex-direction: column;
-      .side {
-        justify-content: center;
+      }
+
+      .skill-set ul {
         width: 100%;
-        text-align: center;
-        .skill-set ul li i{
-          font-size: 2rem;
-          
+        justify-content: space-around;
+
+        li {
+          margin: 0 5px 0 0;
         }
-        .skill-set ul{
-          width: 100%;
-          justify-content: space-around;
-          li{
-            margin: 0 5px 0 0;
-          }
-        }
-        h3{
-          font-weight: 700;
-          margin-bottom: 5%;
-        }
+      }
+
+      h3 {
+        font-weight: 700;
+        margin-bottom: 5%;
       }
     }
   }
+}
 
-  @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
-    .navigation a:not(:first-child) {
-      display: none;
-    }
-
-    .navigation a.icon {
-      float: right;
-      display: block;
-    }
-
-    .navigation .noShow img {
-      float: left;
-      width: 100px;
-    }
-
-    .navigation {
-      overflow: hidden;
-    }
-
-    .navigation.responsive a:first-child {
-      display: none;
-    }
+  .navigation a:not(:first-child) {
+    display: none;
   }
+
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navigation .noShow img {
+    float: left;
+    width: 100px;
+  }
+
+  .navigation {
+    overflow: hidden;
+  }
+
+  .navigation.responsive a:first-child {
+    display: none;
+  }
+}

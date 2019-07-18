@@ -199,6 +199,22 @@ a {
   justify-content: space-between;
   margin: 5% 0;
 }
+@media screen and (max-width: 500px) {
+  .top .side {
+    justify-content: center;
+    width: 100%;
+  }
+  .top .hide {
+    display: none;
+  }
+  .top .button {
+    width: 100px;
+    font-size: 0.7em;
+    height: 25px;
+    padding: 0;
+    border-radius: 5px;
+  }
+}
 .side {
   width: 48%;
   height: 300px;
@@ -274,6 +290,11 @@ button:focus {
 .bottom h1 {
   padding: 5% 0 3% 0;
 }
+@media screen and (max-width: 500px) {
+  .bottom table tr td {
+    font-size: 0.8rem;
+  }
+}
 .bottom table {
   width: auto;
   margin: 0 auto;
@@ -287,24 +308,12 @@ button:focus {
   padding: 2%;
   width: 10%;
 }
+.bottom thead {
+  background-color: #008CBA;
+  color: #C9D6FF;
+}
 footer i {
   color: crimson;
-}
-@media screen and (max-width: 500px) {
-  .top .side {
-    justify-content: center;
-    width: 100%;
-  }
-  .top .hide {
-    display: none;
-  }
-  .top .button {
-    width: 100px;
-    font-size: 0.7em;
-    height: 25px;
-    padding: 0;
-    border-radius: 5px;
-  }
 }
 @media screen and (max-width: 500px) {
   .mid {
