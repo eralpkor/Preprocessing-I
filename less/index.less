@@ -163,6 +163,8 @@ body {
 @crimson: crimson;
 @blue: #008CBA; //blueish
 @gold: gold;
+@h1: 3.5em;
+@h3: 1.5em;
 
 .nav() {
   padding: 5%;
@@ -180,8 +182,7 @@ body {
   flex-wrap: wrap;
 }
 
-@h1: 3.5em;
-@h3: 1.5em;
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -221,6 +222,9 @@ a {
   justify-content: space-around;
   align-items: center;
   .nav();
+}
+.navigation .icon{
+  display: none;
 }
 
 #tiny {
@@ -422,6 +426,10 @@ footer i {
 }
 
 @media screen and (max-width: 500px) {
+  .navigation .icon{
+    display: block;
+  }
+  
 
   .navigation a:not(:first-child) {
     display: none;
@@ -443,5 +451,52 @@ footer i {
 
   .navigation.responsive a:first-child {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .navigation.responsive {
+    position: relative;
+    background: #008CBA;
+  }
+
+  .navigation a {
+    color: white;
+  }
+  .navigation #special {
+    color: @crimson;
+  }
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 15px;;
+    top: 10px;
+  }
+
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+  }
+ 
+  .navigation a.logo {
+    float: left;
+  }
+  .logo {
+    width: 60%;
+    height: auto;
+  }
+
+  .navigation.responsive .show {
+    display: none;
+  }
+
+  nav.navigation {
+    display: block;
+  }
+
+  .navigation.responsive a:nth-child(2) {
+    display: block;
   }
 }
