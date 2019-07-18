@@ -1,19 +1,114 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/index.css">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+
+  <title>Eralp Resume</title>
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+  <div class="container">
+    <!-- top navigation -->
+    <nav class="navigation" id="Nav">
+      <a id="smiley" class="logo" href="./index.html"> <img id="tiny" src="img/favicon-32x32.png" alt="cat image"></a>
+
+      <a class="home active" href="./index.html">Home</a>
+      <a href="./services.html">About</a>
+      <a href="https://eralpkor.com/" target="_blank">Portfolio</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="javascript:void(0);" id="special" class="icon" onclick="expandNav()">
+        <i  class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+    <div class="top">
+      <div class="side hide">
+        <img src="img/raleigh-nc.jpg" alt="raleigh at sunset" class="img">
+      </div>
+      <div class="side">
+        <h1>Eralp Kor</h1>
+        <hr style="border-top: dotted 1px; width: 200px;">
+        <h3>Full Stack Web Developer</h3>
+
+        <button onclick="location.href='./contact.html'" type="button" class="button">Contact Me</button>
+      </div>
+    </div>
+
+    <section class="mid">
+      <div class="side">
+        <h3>Summary</h3>
+        <p>Test Engineer, with over 14 years of IT experience. Manual and automated testing. All aspects of Server
+          upgrade, assembly, testing and troubleshooting. Excellent reputation for completing projects in a timely
+          manner and in accordance with project specifications. Currently studying Full Stack Web Development and
+          Computer Science at Lambda School.</p>
+      </div>
+      <div class="side">
+        <h3>Skills</h3>
+        <div class="skill-set">
+          <ul>
+            <li><i class="fab fa-html5 fa-5x"></i></li>
+            <li><i class="fab fa-css3 fa-5x"></i></li>
+            <li><i class="fab fa-js fa-5x"></i></li>
+            <li><i class="fas fa-terminal fa-5x"></i></li>
+            <li><i class="fab fa-less fa-5x"></i></li>
+            <li><i class="fab fa-react fa-5x"></i></li>
+            <li><i class="fas fa-network-wired fa-5x"></i></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="bottom">
+      <h1>Work History</h1>
+      <table>
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Employer</td>
+            <td>Years</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>ThinkSystem Platform Integration Engineer </td>
+          <td>Lenovo</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>System Administrator</td>
+          <td>Accounting Experts Inc.</td>
+          <td>10</td>
+        </tr>
+
+        <tr>
+          <td>Blade Interoperability and Switch Validation Test Engineer</td>
+          <td>IBM</td>
+          <td>4</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <footer style="text-align: center; padding: 5%">
+      Made with love <i class="fa fa-heart" aria-hidden="true"></i> by Eralp
+    </footer>
+
+  </div>
+
+
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
